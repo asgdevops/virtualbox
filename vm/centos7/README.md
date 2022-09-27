@@ -1,6 +1,8 @@
-# Create a new CentOS 7 Virtual Machine
+# :notes: Create a new CentOS 7 Virtual Machine
 
-# Steps
+By Antonio Salazar - September 2022
+
+# :paw_prints: Steps
 
 1. Download the `CentOS-7-x86_64-Minimal-2009.iso` from the [**CentOS downloads**](https://www.centos.org/download/) page.
 2. On **VirtualBox** open the main menu and select the **Machine -> New...** option.

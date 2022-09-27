@@ -1,8 +1,8 @@
-# Create a new Ubuntu 22.04 Virtual Machine
+# :notes: Create a new Ubuntu 22.04 Virtual Machine
 
 By Antonio Salazar - September 2022
 
-Steps
+# :paw_prints: Steps
 
 1. Download the Ubuntu 22.04 Server ISO image from the [Ubuntu 22.04 Releases](https://releases.ubuntu.com/22.04/) page.
 2. Open Virtual Box.
