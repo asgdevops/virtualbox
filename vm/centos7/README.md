@@ -1,9 +1,9 @@
-# :notes: Create a new CentOS 7 Virtual Machine
+# Create a new CentOS 7 Virtual Machine
 
-# :paw_prints: Steps
+# Steps
 
 1. Download the `CentOS-7-x86_64-Minimal-2009.iso` from the [**CentOS downloads**](https://www.centos.org/download/) page.
-2. On **VirtualBox** open the main menu and select the **New Machine…** option.
+2. On **VirtualBox** open the main menu and select the **Machine -> New...** option.
     
     ![centos7](images/centos7.png)
     
@@ -85,32 +85,30 @@
     
 
 15. **USER SETTINGS**: select the **ROOT PASSWORD:** menu.
-    ![centos7](images/centos7_16.png)
 
-    a. **ROOT PASSWORD**: type the password for root and confirm.
-        ![centos7](images/centos7_17.png)
-    
+![centos7](images/centos7_16.png)
 
-    b. **CREATE USER**: input the following parameters:
-        1. **Full Name**: user’s full name.
-        2. **User name**: host user account name.
-        3. **Make this user administrator**: checked.
-        4. **Require a password to user this account:** checked.
-        5. **Done**.
-        ![centos7](images/centos7_18.png)
+1. ROOT PASSWORD: type the password for root and confirm.
     
-16. The installation process starts, so wait until the number of packages are copied and installed.
+    ![centos7](images/centos7_17.png)
+    
+2. CREATE USER: input the following parameters:
+    1. **Full Name**: user’s full name.
+    2. **User name**: host user account name.
+    3. **Make this user administrator**: checked.
+    4. **Require a password to user this account:** checked.
+    5. **Done**.
+    
+    ![centos7](images/centos7_18.png)
+    
+3. The installation process starts, so wait until the number of packages are copied and installed.
     
     ![centos7](images/centos7_19.png)
     
-17. Once the installation of CentOS 7 gets complete, click on the Reboot button. (due to the resolution of the VM, the Reboot button could be hidden or shows just a corner of it).
+4. Once the installation of CentOS 7 gets complete, click on the Reboot button. (due to the resolution of the VM, the Reboot button could be hidden or shows just a corner of it).
     
     ![centos7](images/centos7_20.png)
     
-18. The process is done, the VM is started up and able to login with either the root or administrator accounts.
+5. The process is done, the VM is started up and able to login with either the root or administrator accounts.
     
     ![centos7](images/centos7_21.png)
-
-# :books: References
-- [VirtualBox.org](https://virtualbox.org)
-- [CentOS.org](https://www.centos.org)
