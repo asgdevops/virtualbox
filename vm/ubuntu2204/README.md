@@ -1,116 +1,130 @@
-# :notes: Create a new Ubuntu 22.04 Virtual Machine
+# Create a new Ubuntu 22.04 Virtual Machine
 
-# :paw_prints: Steps
+By Antonio Salazar - September 2022
 
-1. Download the `CentOS-7-x86_64-Minimal-2009.iso` from the [**CentOS downloads**](https://www.centos.org/download/) page.
-2. On **VirtualBox** open the main menu and select the **New Machine…** option.
+Steps
+
+1. Download the Ubuntu 22.04 Server ISO image from the [Ubuntu 22.04 Releases](https://releases.ubuntu.com/22.04/) page.
+2. Open Virtual Box.
+3. Select the **New** *(Ctrl+N) Machine* menu option.
     
-    ![centos7](images/centos7.png)
+    ![ubuntu2204](images/ubuntu2204.png)
     
-3. **Name and operating system**: Input the parameters below.
-    1. **Name**: is the VM name.
-    2. **Machine Folder**: the place where to save the VM configuration files, logs and disks.
-    3. **Type**: select Linux as OS type.
-    4. **Version**: select Red Hat (64-bit) option.
+4. Set the Virtual Machine Name, Files Location, OS Type and Version.
     
-    ![centos7](images/centos7_1.png)
+    ![ubuntu2204](images/ubuntu2204_1.png)
     
-4. **Memory Size: s**et that to 2 GB.
+5. **Hard Disk**: Create a virtual hard disk now.
     
-    ![centos7](images/centos7_2.png)
+    ![ubuntu2204](images/ubuntu2204_2.png)
     
-5. **Hard disk**: Select the Create a virtual hard disk now option.
+6. **Hard disk file type**: VDI (VirtualBox Disk Image)
     
-    ![centos7](images/centos7_3.png)
+    ![ubuntu2204](images/ubuntu2204_3.png)
     
-6. **Hard disk file type: s**elect the VDI (VirtualBox Disk Image) option.
+7. **Storage on physical hard disk**: Dynamically allocated.
     
-    ![centos7](images/centos7_4.png)
+    ![ubuntu2204](images/ubuntu2204_4.png)
     
-7. **Storage on physical hard disk**: choose Dynamically allocated option.
+8. **File location and size**: location of your best choice, recommended size 20 GB at least.
     
-    ![centos7](images/centos7_5.png)
+    ![ubuntu2204](images/ubuntu2204_5.png)
     
-8. **File location and size**: select the file location and 20 GB disk size. 
+9. Click on **Properties**.
     
-    ![centos7](images/centos7_6.png)
+    ![ubuntu2204](images/ubuntu2204_6.png)
     
-9. Once the VM is created, click on the **Properties** menu.
+10. Go to **Storage, Optical Drive** and pick the **ubuntu-20.04.4-live-server-amd64.iso** file.
     
-    ![centos7](images/centos7_7.png)
+    ![ubuntu2204](images/ubuntu2204_7.png)
     
-10. Open the **Storage** menu:
-    1. Under Controller IDE click on the **Optical Drive**. 
-    2. Pick the **CentOS-7-x86_64-Minimal-2009.iso** image file.
-    3. Click **Ok**.
-    
-    ![centos7](images/centos7_8.png)
-    
-11. Open the Network menu and input the parameters below:
-    1. **Enable Network Adapter**: checked.
+11. Go to **Network** and set the parameter below:
+    1. **Enable Network Adapter**: check. 
     2. **Attached to**: Bridged Adapter.
-    3. **Name**: your local PC or laptop network device name, either Wireless or Ethernet.
-    4. Expand the **Advanced** option.
-    5. **Cable Connected**: checked.
-    6. Click **Ok**.
+    3. **Name**: Your available network device name.
+    4. **Advanced**: expand.
+    5. **Cable connected**: check.
     
-    ![centos7](images/centos7_9.png)
+    ![ubuntu2204](images/ubuntu2204_8.png)
     
-12. Click on the **Start** button.
-    
-    ![centos7](images/centos7_10.png)
-    
-13. When the VM launches, select the **Install CentOS 7** menu option.
-    
-    ![centos7](images/centos7_11.png)
-    
-14. **WELCOME TO CENTOS 7**: Select your preferred language and click **Continue**.
-    
-    ![centos7](images/centos7_12.png)
-    
-15. **INSTALLATION SUMMARY:** select the INSTALLATION DESTINATION option.
-    
-    ![centos7](images/centos7_13.png)
-    
-16. **INSTALLATION DESTINATION**: select Automatically configure partitioning and click on **Done**.
-    
-    ![centos7](images/centos7_14.png)
-    
-17. **NETWORK & HOSTNAME**: 
-    1. **Ethernet (enp0s3)**: ON
-    2. **Hostname**: input the name you would like to identify your VM host.
-    3. **Done**.
-    
-    ![centos7](images/centos7_15.png)
-    
+12. Click on **Start.**
 
-15. **USER SETTINGS**: select the **ROOT PASSWORD:** menu.
-    ![centos7](images/centos7_16.png)
-
-    a. **ROOT PASSWORD**: type the password for root and confirm.
-        ![centos7](images/centos7_17.png)
+    ![ubuntu2204](images/ubuntu2204_8a.png)
     
-
-    b. **CREATE USER**: input the following parameters:
-        1. **Full Name**: user’s full name.
-        2. **User name**: host user account name.
-        3. **Make this user administrator**: checked.
-        4. **Require a password to user this account:** checked.
-        5. **Done**.
-        ![centos7](images/centos7_18.png)
+13. Select your preferred language for the installation process.
     
-16. The installation process starts, so wait until the number of packages are copied and installed.
+    ![ubuntu2204](images/ubuntu2204_9.png)
     
-    ![centos7](images/centos7_19.png)
+14. Choose **Install Ubuntu Server**.
     
-17. Once the installation of CentOS 7 gets complete, click on the Reboot button. (due to the resolution of the VM, the Reboot button could be hidden or shows just a corner of it).
+    ![ubuntu2204](images/ubuntu2204_10.png)
     
-    ![centos7](images/centos7_20.png)
+15. Select the preferred language one more time.
     
-18. The process is done, the VM is started up and able to login with either the root or administrator accounts.
+    ![ubuntu2204](images/ubuntu2204_11.png)
     
-    ![centos7](images/centos7_21.png)
-
-# :books: References
-- [VirtualBox.org](https://virtualbox.org)
-- [CentOS.org](https://www.centos.org)
+16. **Continue without updating**.
+    
+    ![ubuntu2204](images/ubuntu2204_12.png)
+    
+17. **Done**: once the keyboard layout satisfied your needs.
+    
+    ![ubuntu2204](images/ubuntu2204_13.png)
+    
+18. **Done**: leave the DHCP and default network device as is.
+    
+    ![ubuntu2204](images/ubuntu2204_14.png)
+    
+19. **Done**: leave proxy access defaults.
+    
+    ![ubuntu2204](images/ubuntu2204_15.png)
+    
+20. **Done**: leave Mirror address defaults.
+    
+    ![ubuntu2204](images/ubuntu2204_16.png)
+    
+21. **Done**: Leave default partitions defaults.
+    
+    ![ubuntu2204](images/ubuntu2204_17.png)
+    
+22. **Continue**: to confirm the partition is correct.
+    
+    ![ubuntu2204](images/ubuntu2204_18.png)
+    
+23. Set the system administrator name, server’s name, username and password.
+    
+    ![ubuntu2204](images/ubuntu2204_19.png)
+    
+24. Done: leave Ubuntu’s token defaults.
+    
+    ![ubuntu2204](images/ubuntu2204_20.png)
+    
+25. **Install OpenSSH Server**: check this option and select Done.
+    
+    ![ubuntu2204](images/ubuntu2204_21.png)
+    
+26. **Done**: leave the packages installation for later.
+    
+    ![ubuntu2204](images/ubuntu2204_22.png)
+    
+27. The installation process starts, so wait until it gets completed.
+    
+    ![ubuntu2204](images/ubuntu2204_23.png)
+    
+28. You may check the logs (View full log) for details about the installation process.
+    
+    ![ubuntu2204](images/ubuntu2204_24.png)
+    
+29. **Close**: when completed.
+    
+    ![ubuntu2204](images/ubuntu2204_25.png)
+    
+30. **Reboot now**.
+    
+    ![ubuntu2204](images/ubuntu2204_26.png)
+    
+31. Login in with your administrator’s account to verify everything is working fine.
+    
+    ![ubuntu2204](images/ubuntu2204_27.png)
+    
+32. Upgrade and install all of the packages you need to work on your new ubuntu server.
