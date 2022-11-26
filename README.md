@@ -1,4 +1,4 @@
-# :notebook: VirtualBox Project Portfolio
+# :notebook: Virtualization Project Portfolio
 This repository is used to ease the deployment of solutions using VirtualBOx.
 
 Basically it consists of notes or recipes about using VirtualBox to create safe environments locally on a laptop or PC.
