@@ -1,6 +1,6 @@
 # :notes: Create an Oracle Linux 7 Cluster with Vagrant
 
-By Antonio Salazar - September 2022
+By Antonio Salazar - August 2022
 
 # :paw_prints: Steps
 
