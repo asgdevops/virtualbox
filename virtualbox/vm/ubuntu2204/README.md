@@ -1,4 +1,4 @@
-# :notes: Create a new Ubuntu 22.04 Virtual Machine
+# :notes: Create a new Ubuntu 22.04 Virtual Machine in VirtualBox
 
 By Antonio Salazar - September 2022
 

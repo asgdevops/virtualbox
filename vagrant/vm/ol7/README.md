@@ -1,4 +1,4 @@
-# :notes: Create a new CentOS 7 Virtual Machine
+# :notes: Create an Oracle Linux 7 Cluster with Vagrant
 
 By Antonio Salazar - September 2022
 

@@ -1,0 +1,77 @@
+{
+    {
+        "name": "centos/7",
+        "description": "CentOS Linux 7/x86_64 Vagrant images updated to 2020-04-30 and based on CentOS 7.8.2003",
+        "url": "https://app.vagrantup.com/centos/boxes/7/versions/2004.01/providers/virtualbox.box"
+    },
+    {
+        "name": "centos/8",
+        "description": "CentOS Linux 8/x86_64 Vagrant images updated to 07-Dec-2020 and based on the release of CentOS Linux 8.3.2011",
+        "url": "https://app.vagrantup.com/centos/boxes/8/versions/2011.0/providers/virtualbox.box"
+    },
+    {
+        "name": "debian/stretch64",
+        "description": "Debian 9 Stretch",
+        "url": "https://app.vagrantup.com/debian/boxes/bullseye64/versions/11.20220718.1/providers/virtualbox.box"
+    },
+    {
+        "name": "debian/buster64",
+        "description": "Debian 10 buster",
+        "url": "https://app.vagrantup.com/debian/boxes/bullseye64/versions/11.20220718.1/providers/virtualbox.box"
+    },
+    {
+        "name": "debian/bullseye64",
+        "description": "Debian 11 bullseye",
+        "url": "https://app.vagrantup.com/debian/boxes/bullseye64/versions/11.20220718.1/providers/virtualbox.box"
+    },
+    {
+        "name": "fedora/35-cloud-base",
+        "description": "Fedora-Cloud-Base-35-1.2.x86_64",
+        "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/35/Cloud/x86_64/images/Fedora-Cloud-Base-Vagrant-35-1.2.x86_64.vagrant-virtualbox.box"
+    },
+    {
+        "name": "fedora/36-cloud-base",
+        "description": "Fedora 36 Cloud Base Images for Vagrant",
+        "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/36/Cloud/x86_64/images/Fedora-Cloud-Base-Vagrant-36-1.5.x86_64.vagrant-virtualbox.box"
+    },
+    {
+        "name": "oraclelinux/7",
+        "description": "Oracle Linux 7",
+        "url": "https://oracle.github.io/vagrant-projects/boxes/oraclelinux/7.json"
+    },
+    {
+        "name": "oraclelinux/8",
+        "description": "Oracle Linux 8",
+        "url": "https://oracle.github.io/vagrant-projects/boxes/oraclelinux/8.json"
+    },
+    {
+        "name": "wvera/sles12sp1",
+        "description": "SUSE Linux Enterprise 12 SP1",
+        "url": "https://app.vagrantup.com/wvera/boxes/sles12sp1/versions/0.0.1/providers/virtualbox.box"
+    },
+    {
+        "name": "oraclelinux/9",
+        "description": "Oracle Linux 9",
+        "url": "https://oracle.github.io/vagrant-projects/boxes/oraclelinux/9.json"
+    },
+    {
+        "name": "ubuntu/bionic64",
+        "description": "Ubuntu Server 18.04",
+        "url": "https://app.vagrantup.com/ubuntu/boxes/bionic64/versions/20220810.0.0/providers/virtualbox.box"
+    },
+    {
+        "name": "ubuntu/focal64",
+        "description": "Ubuntu Server 20.04",
+        "url": "https://app.vagrantup.com/ubuntu/boxes/focal64/versions/20220815.0.0/providers/virtualbox.box"
+    },
+    {
+        "name": "ubuntu/jammy64",
+        "description": "Ubuntu Server 22.04",
+        "url": "https://app.vagrantup.com/ubuntu/boxes/jammy64/versions/20220810.0.0/providers/virtualbox.box"
+    },
+    {
+        "name": "Microsoft/EdgeOnWindows10",
+        "description": "Windows 10 with Microsoft Edge configured as the default browser.",
+        "url": "https://app.vagrantup.com/Microsoft/boxes/EdgeOnWindows10/versions/1.0/providers/virtualbox.box"
+    },
+}
