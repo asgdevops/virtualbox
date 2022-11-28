@@ -1,4 +1,4 @@
-# :notebooks: Create an Oracle Linux 7 Cluster with Vagrant
+# :notebook: Create an Oracle Linux 7 Cluster with Vagrant
 
 By Antonio Salazar - August 2022
 
