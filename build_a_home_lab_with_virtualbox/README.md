@@ -177,7 +177,7 @@ The table below shows an example of the VM inventory.
 
 3. Create a virtual network with Oracle VM VirtualBox Manager.
 
-	Executee the steps found at [Create a virtual network with Oracle VM VirtualBox Manager](../virtualbox/network/README) to create a virtual network.
+	Executee the steps found at [Create a virtual network with Oracle VM VirtualBox Manager](../virtualbox/network/README.md) to create a virtual network.
 
 <br/>
 
