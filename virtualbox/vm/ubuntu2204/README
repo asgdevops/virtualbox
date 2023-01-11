@@ -1,11 +1,22 @@
-# :notes: Create a new Ubuntu 22.04 Virtual Machine in VirtualBox
+# :book: Create a new Ubuntu 22.04 Virtual Machine in VirtualBox
+By [Antonio Salazar](mailto:antonio.salazar@ymail.com) - September 2022
 
-By Antonio Salazar - September 2022
+**Document log**
+|Date|Description|
+|:--:|--|
+|2022-09|Inicial creation. Steps with screen-shots only.|
+|2023-01| Added sections: Document log, Work Sumary, Requisites, and References|
+
+# Work summary
+- Set up a new Virtual Machine with Ubuntu 22.04 Server Installed.
+
+# Requisites
+- Install [Oracle VM VirtualBox Manager](https://www.virtualbox.org/manual/UserManual.html#intro-installing) on your laptop, personal computer, or workstation.
 
 # :paw_prints: Steps
 
 1. Download the Ubuntu 22.04 Server ISO image from the [Ubuntu 22.04 Releases](https://releases.ubuntu.com/22.04/) page.
-2. Open Virtual Box.
+2. Open Oracle VM VirtualBox manager.
 3. Select the **New** *(Ctrl+N) Machine* menu option.
     
     ![ubuntu2204](images/ubuntu2204.png)
@@ -128,3 +139,8 @@ By Antonio Salazar - September 2022
     ![ubuntu2204](images/ubuntu2204_27.png)
     
 32. Upgrade and install all of the packages you need to work on your new ubuntu server.
+
+<br/>
+
+# :books: References
+- [:copyright: Canonical ubuntu Server - Basic installation](https://ubuntu.com/server/docs/installation)

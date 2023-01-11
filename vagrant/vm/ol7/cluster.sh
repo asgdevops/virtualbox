@@ -117,22 +117,21 @@ destroy_cluster(){
 set_env;
 set_vagrantfile "oraclelinux/7" "http://oracle.github.io/vagrant-projects/boxes/oraclelinux/7.json" ;
 
-while true
+flag=1
+while [ $flag -eq 1 ]
 do
     PS3="Please select an option for the cluster: " ;
-    select opt in "Create" "Start" "Stop" "Destroy" "Quit";
+    select opt in "Create" "Start" "Stop" "Destroy" "Remove" "Quit";
     do
-    echo "You picked the ${REPLY} option: $opt" ;
-    case "$opt" in
-        "Create")  create_cluster ;;
-        "Start")   start_cluster ;;
-        "Stop")    stop_cluster ;;
-        "Destroy") destroy_cluster ;;
-        "Quit")    break ;;
-        *)
-            echo "Unkown option";
-            break 
-        ;;
-    esac ;
-    done ;
+        echo "You picked the ${REPLY} option: $opt" ;
+        case "$opt" in
+            "Create")  create_cluster ;;
+            "Start")   start_cluster  ;;
+            "Stop")    stop_cluster   ;;
+            "Destroy") destroy_cluster;;
+            "Quit")    flag=0         ;;
+            *) echo "Unkown option"   ;;
+        esac ;
+        break ;
+    done ; 
 done ;

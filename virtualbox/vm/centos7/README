@@ -1,6 +1,19 @@
-# :notes: Create a new CentOS 7 Virtual Machine in VirtualBox
+# :book: Create a new CentOS 7 Virtual Machine in VirtualBox
 
-By Antonio Salazar - September 2022
+By [Antonio Salazar](mailto:antonio.salazar@ymail.com) - September 2022
+
+**Document log**
+|Date|Description|
+|:--:|--|
+|2022-09|Inicial creation. Steps with screen-shots only.|
+|2023-01|Added sections: Document log, Work Sumary, Requisites, and References|
+
+# Work summary
+- Set up a new Virtual Machine with CentOS 7 minimal Installed.
+
+# Requisites
+- Install [Oracle VM VirtualBox Manager](https://www.virtualbox.org/manual/UserManual.html#intro-installing) on your laptop, personal computer, or workstation.
+
 
 # :paw_prints: Steps
 
@@ -114,3 +127,8 @@ By Antonio Salazar - September 2022
 5. The process is done, the VM is started up and able to login with either the root or administrator accounts.
     
     ![centos7](images/centos7_21.png)
+
+<br/>
+
+# :books: References
+- [CentOS Installation Guide](https://docs.centos.org/en-US/centos/install-guide/)
