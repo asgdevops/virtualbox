@@ -17,7 +17,7 @@ It consists of notes or recipes about using Virtual Machines-related projects.
 
 ## Vagrant
 
-- :link: [Create a VM or Cluster with Vagrant](vagrant/vm/README.md)
+- :link: [Create a VM or Cluster with Vagrant](vagrant/README.md)
 
 <br/>
 
