@@ -1,0 +1,59 @@
+ENV['VAGRANT_DEFAULT_PROVIDER'] = 'virtualbox'
+ENV['VAGRANT_CWD'] = "$VAGRANT_HOME/$project"
+ENV['VAGRANT_VAGRANTFILE'] = '$VAGRANT_HOME/$project/Vagrantfile'
+
+# Vagrant configuration file for the entire cluster
+Vagrant.configure("2") do |config|
+
+  # VM master   
+  config.vm.define "master" do |master|
+      master.vm.box = "centos/7"
+      master.vm.hostname = "master"
+      master.ssh.forward_agent = true
+      master.ssh.keep_alive = true
+      master.vm.network "private_network", ip: "192.168.57.30"
+      master.vm.network "forwarded_port", guest: 22, host: 2230, host_ip: "127.0.0.1"
+      master.vm.network "forwarded_port", guest: 8080, host: 8030, host_ip: "127.0.0.1"
+      master.vm.provider :virtualbox do |v|
+      v.memory = 1024
+      v.cpus   = 2
+      v.name   = "master"
+      v.customize ["modifyvm", :id, "--groups", "/vagrant"]
+      end 
+  end
+
+    # Node1
+    config.vm.define "worker1" do |worker1|
+      worker1.vm.box = "centos/7"
+      worker1.vm.hostname = "worker-1"
+      worker1.ssh.forward_agent = true
+      worker1.ssh.keep_alive = true
+      worker1.vm.network "private_network", ip: "192.168.57.31"
+      worker1.vm.network "forwarded_port", guest: 22, host: 2231, host_ip: "127.0.0.1"
+      worker1.vm.network "forwarded_port", guest: 80, host: 8031, host_ip: "127.0.0.1"
+          worker1.vm.provider :virtualbox do |v|
+          v.memory = 512
+          v.cpus   = 1
+          v.name = "worker-1"
+          v.customize ["modifyvm", :id, "--groups", "/vagrant"]
+      end
+  end
+
+  # Node2
+  config.vm.define "worker2" do |worker2|
+      worker2.vm.box = "centos/7"
+      worker2.vm.hostname = "worker-2"
+      worker2.ssh.forward_agent = true
+      worker2.ssh.keep_alive = true
+      worker2.vm.network "private_network", ip: "192.168.57.32"
+      worker2.vm.network "forwarded_port", guest: 22, host: 2232, host_ip: "127.0.0.1"
+      worker2.vm.network "forwarded_port", guest: 80, host: 8032, host_ip: "127.0.0.1"
+      worker2.vm.provider :virtualbox do |v|
+          v.memory = 512
+          v.cpus   = 1
+          v.name = "worker-2"
+          v.customize ["modifyvm", :id, "--groups", "/vagrant"]
+      end
+  end
+
+end 

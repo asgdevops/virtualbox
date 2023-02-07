@@ -1,0 +1,23 @@
+ENV['VAGRANT_DEFAULT_PROVIDER'] = 'virtualbox'
+ENV['VAGRANT_CWD'] = "$VAGRANT_HOME/$project"
+ENV['VAGRANT_VAGRANTFILE'] = '$VAGRANT_HOME/$project/Vagrantfile'
+
+# Vagrant configuration file for single VM
+Vagrant.configure("2") do |config|
+  # VM build 
+  config.vm.define "build" do |build|
+      build.vm.box = "ubuntu/jammy64"
+      build.vm.box_url = "https://app.vagrantup.com/ubuntu/boxes/jammy64/versions/20220810.0.0/providers/virtualbox.box"
+      build.vm.hostname = "ubuntu2204"
+      build.ssh.forward_agent = true
+      build.ssh.keep_alive = true
+      build.vm.network "private_network", ip: "192.168.56.27"
+      build.vm.network "forwarded_port", guest: 22, host: 2227, host_ip: "127.0.0.1"
+      build.vm.provider "virtualbox" do |v|
+          v.memory = 1024
+          v.cpus   = 2
+          v.name   = "ubuntu2204"
+          v.customize ["modifyvm", :id, "--groups", "/vagrant"]
+      end 
+  end
+end    

@@ -24,10 +24,10 @@ The virtual machines run Oracle Linux version 7, but they can be customizable to
 
     > _In this example the Box is based on Alpine_
 
-2. Download the Bash script [vm.sh](vm.sh) and conext files below:
+2. Download the Bash script [vm.sh](vm/vm.sh) and conext files below:
 
-    - [alpine/ssh_ports.cfg](alpine/ssh_ports.cfg)
-    - [alpine/Vagrantfile](alpine/Vagrantfile)
+    - [alpine/ssh_ports.cfg](vm/alpine/ssh_ports.cfg)
+    - [alpine/Vagrantfile](vm/alpine/Vagrantfile)
 
 3. Customize any or both above files.
 
