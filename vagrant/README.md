@@ -148,7 +148,7 @@ They are used to remove the records from `~/.ssh/known_hosts` after destroying t
 
     ||
     |:--:|
-    |![i](images/../../images/vagrant_01.png)|
+    |![i](images/vagrant_01.png)|
     | Fig. 1 - ssh login |
 
 3. Type the password `vagrant`
@@ -162,23 +162,23 @@ ssh-keygen -f "/home/ansalaza/.ssh/known_hosts" -R "[127.0.0.1]:2207"
 
   ||
   |:--:|
-  |![i](images/../../images/vagrant_02.png)|
+  |![i](images/vagrant_02.png)|
   |Fig. 2 - duplicate host Key record|
 
 
   ||
   |:--:|
-  |![i](images/../../images/vagrant_03.png)|
+  |![i](images/vagrant_03.png)|
   |Fig. 3 - duplicate host Key record removal|
 
 # Context examples
 
-|Context|Config files|
-|--|--|
-|alpine|[ssh_ports.cfg](alpine/ssh_ports.cfg) <br/>[Vagrantfile](alpine/Vagrantfile)|
-|centos|[ssh_ports.cfg](centos/ssh_ports.cfg) <br/>[Vagrantfile](centos/Vagrantfile)|
-|ol7|[ssh_ports.cfg](ol7/ssh_ports.cfg) <br/>[Vagrantfile](ol7/Vagrantfile)|
-|ubuntu|[ssh_ports.cfg](ubuntu/ssh_ports.cfg) <br/>[Vagrantfile](ubuntu/Vagrantfile)|
+|Context|Config files||
+|--|--|--|
+|alpine|[ssh_ports.cfg](vm/alpine/ssh_ports.cfg)|[Vagrantfile](vm/alpine/Vagrantfile)|
+|centos|[ssh_ports.cfg](vm/centos/ssh_ports.cfg)|[Vagrantfile](vm/centos/Vagrantfile)|
+|ol7|[ssh_ports.cfg](vm/ol7/ssh_ports.cfg)|[Vagrantfile](vm/ol7/Vagrantfile)|
+|ubuntu|[ssh_ports.cfg](vm/ubuntu/ssh_ports.cfg)|[Vagrantfile](vm/ubuntu/Vagrantfile)|
 
 
 # :books: References
