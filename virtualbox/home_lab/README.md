@@ -7,6 +7,7 @@ Author: [Antonio Salazar Gomez](mailto:antonio.salazar@ymail.com).
 |:--:|--|
 |2022-01-07|Inicial creation.|
 
+
 # Description
 
 This document shows an example of building a home laboratory capable of connecting at least two virtual machines in the same virtual network.
@@ -102,13 +103,22 @@ As shown by the Figure 3:
 	- 192.168.0.0
 - For a home lab, it is recommended to use a Class C type network because it has such a few devices connected. As a result, the CIDR block should take any values between 2<sup>4</sup> (0.0.0.0/28) and 2<sup>8</sup> (0.0.0.0/24).
 - In the following diagram, three virtual networks are created with Oracle VM VirtualBox Manager. The virtual networks are using the private IP ranges and CIDR blocks below:
-	- Virtual Network A: 10.7.0.0/24
-	- Virtual Network B: 172.16.7.0/24
-	- Virtual Network C: 192.168.7.0/24
+	- Virtual Network A: 
+    	- `10.0.0.0/[8-15]`
+    	- `172.16.0.0/[8-15]`
+    	- `192.168.0.0/[8-15]`
+	- Virtual Network B: 
+    	- `10.0.0.0/[16-23]`
+    	- `172.16.0.0/[16-23]`
+    	- `192.168.0.0/[16-23]`
+	- Virtual Network C: 
+    	- `10.0.0.0/[24-32]`
+    	- `172.16.0.0/[24-32]`
+    	- `192.168.7.0/[24-32]`
 
 |![Network](images/home_lab-Network.drawio.png)|
 |:--:|
-|Fig.3 - Lab Network|
+|Fig.3 - Lab Network Example|
 
 ### Commands to get the IP addresses
 
@@ -165,19 +175,12 @@ The table below shows an example of the VM inventory.
 
 ## Step Details
 
-1. Install Oracle VM VirtualBox Manager.
+1. [Install Oracle VM VirtualBox Manager](https://www.virtualbox.org/manual/UserManual.html#intro-installing).
 
-	Read the directions found at [1.5. Installing Oracle VM VirtualBox and Extension Packs](https://www.virtualbox.org/manual/UserManual.html#intro-installing) by the Oracle® VM VirtualBox® User Manual
+2. [Create a new Ubuntu 22.04 Virtual Machine in VirtualBox](../vm/ubuntu2204/README.md).
 
-2. Create a new virtual machine.
+3. [Configure a virtual network with Oracle VM VirtualBox Manager](../network/README.md).
 
-	Follow any of the examples below to set up a virtual machine:
-	- [Create a new CentOS 7 Virtual Machine in VirtualBox](https://github.com/asgdevops/virtualization/blob/main/virtualbox/vm/centos7/README.md)
-	- [Create a new Ubuntu 22.04 Virtual Machine in VirtualBox](https://github.com/asgdevops/virtualization/blob/main/virtualbox/vm/ubuntu2204/README.md)
-
-3. Create a virtual network with Oracle VM VirtualBox Manager.
-
-	Executee the steps found at [Create a virtual network with Oracle VM VirtualBox Manager](../virtualbox/network/README.md) to create a virtual network.
 
 <br/>
 

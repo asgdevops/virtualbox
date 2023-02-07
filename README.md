@@ -1,23 +1,23 @@
-# :notebook: Virtualization Project Portfolio
+# :book: Virtualization Project Portfolio
 
 This repository eases the deployment of solutions using any virtualization tools such as Vagrant or VirtualBox.
 
 It consists of notes or recipes about using Virtual Machines-related projects.
 
-Author: [Antonio Salazar Gomez](mailto:antonio.salazar@ymail.com). 
-
 **Document log**
-|Date|Description|
-|:--:|--|
-|2022-11-26|Inicial creation.|
-|2023-01-07|Added the sections: Document log and Virtual Network links.|
+|Date|Contributor|Description|
+|:--:|--|--|
+|2022-11-26|[Antonio Salazar Gomez](mailto:antonio.salazar@ymail.com)|Inicial creation.|
+|2023-01-07||Added the sections: Document log and Virtual Network links.|
+|2023-02-06||Enhanced `vm.sh` script. Fixed context config files functionality.|
 
+<br/>
 
 # :bookmark_tabs: Table of Contents
 
 ## Vagrant
 
-- :link: [Create an Oracle Linux 7 Cluster with Vagrant](vagrant/vm/ol7/README.md)
+- :link: [Create a VM or Cluster with Vagrant](vagrant/vm/README.md)
 
 <br/>
 
@@ -31,4 +31,4 @@ Author: [Antonio Salazar Gomez](mailto:antonio.salazar@ymail.com).
 
 ### Virtual Network
 - :link: [Create a virtual network with Oracle VM VirtualBox Manager](virutalbox/../virtualbox/network/README.md)
-- :link: [Build a home laboratory with VirtualBox](build_a_home_lab_with_virtualbox/README.md)
+- :link: [Build a home laboratory with VirtualBox](virtualbox/home_lab/README.md)
